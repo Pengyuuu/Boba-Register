@@ -109,6 +109,48 @@ public class DrinkFactory {
 		}
 		
 		// Yakult and Yogurt section
+		else if (type.equalsIgnoreCase("Green Tea Yakult")) {
+			
+			return new GreenTeaYakult();
+		}
+		else if (type.equalsIgnoreCase("Green Tea Yogurt")) {
+			
+			return new GreenTeaYogurt();
+		}
+		else if (type.equalsIgnoreCase("Passion Fruit Yakult")) {
+			
+			return new PassionFruitYakult();
+		}
+		else if (type.equalsIgnoreCase("Passion Fruit Yogurt")) {
+			
+			return new PassionFruitYogurt();
+		}
+		else if (type.equalsIgnoreCase("Lychee Yakult")) {
+			
+			return new LycheeYakult();
+		}
+		else if (type.equalsIgnoreCase("Lychee Yogurt")) {
+			
+			return new LycheeYogurt();
+		}
+		else if (type.equalsIgnoreCase("Mango Yakult")) {
+			
+			return new MangoYakult();
+		}
+		else if (type.equalsIgnoreCase("Mango Yogurt")) {
+			
+			return new MangoYogurt();
+		}
+		else if (type.equalsIgnoreCase("Strawberry Yakult")) {
+			
+			return new StrawberryYakult();
+		}
+		else if (type.equalsIgnoreCase("Strawberry Yogurt")) {
+			
+			return new StrawberryYogurt();
+		}
+		
+		// Milk tea section
 		else {
 			
 			return null;

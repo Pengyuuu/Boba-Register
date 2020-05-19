@@ -3,7 +3,7 @@ Jasmine Green Tea;2.65
 Oolong Tea;2.65
 Peach Green Tea;3.25;true
 Peach Black Tea;3.25;true
-Strawberry Geen Tea;3.25;true
+Strawberry Green Tea;3.25;true
 Strawberry Black Tea;3.25;true
 Mango Green Tea;3.25;true
 Mango Black Tea;3.25;true
