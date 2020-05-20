@@ -151,6 +151,84 @@ public class DrinkFactory {
 		}
 		
 		// Milk tea section
+		else if (type.equalsIgnoreCase("Signature Milk Tea")) {
+			
+			return new SignatureMilkTea();
+		}
+		else if (type.equalsIgnoreCase("Jasmine Green Milk Tea")) {
+			
+			return new JasmineGreenMilkTea();
+		}
+		else if (type.equalsIgnoreCase("Oolong Milk Tea")) {
+			
+			return new OolongMilkTea();
+		}
+		else if (type.equalsIgnoreCase("Coffee Milk Tea")) {
+			
+			return new CoffeeMilkTea();
+		}
+		else if (type.equalsIgnoreCase("Taro Milk Tea")) {
+			
+			return new TaroMilkTea();
+		}
+		else if (type.equalsIgnoreCase("Matcha Milk Tea")) {
+			
+			return new MatchaMilkTea();
+		}
+		else if (type.equalsIgnoreCase("Chocolate Milk Tea")) {
+			
+			return new ChocolateMilkTea();
+		}
+		else if (type.equalsIgnoreCase("Honey Milk Tea")) {
+			
+			return new HoneyMilkTea();
+		}
+		else if (type.equalsIgnoreCase("Strawberry Milk Tea")) {
+			
+			return new StrawberryMilkTea();
+		}
+		else if (type.equalsIgnoreCase("Lychee Milk Tea")) {
+			
+			return new LycheeMilkTea();
+		}
+		else if (type.equalsIgnoreCase("Winter Melon Milk Tea")) {
+			
+			return new WinterMelonMilkTea();
+		}
+		else if (type.equalsIgnoreCase("Peach Milk Tea")) {
+			
+			return new PeachMilkTea();
+		}
+		else if (type.equalsIgnoreCase("Mango Milk Tea")) {
+			
+			return new MangoMilkTea();
+		}
+		else if (type.equalsIgnoreCase("Passion Fruit Milk Tea")) {
+			
+			return new PassionFruitMilkTea();
+		}
+		else if (type.equalsIgnoreCase("Brown Sugar Milk Tea")) {
+			
+			return new BrownSugarMilkTea();
+		}
+		else if (type.equalsIgnoreCase("Hazelnut Milk Tea")) {
+			
+			return new HazelnutMilkTea();
+		}
+		else if (type.equalsIgnoreCase("Vanilla Milk Tea")) {
+			
+			return new VanillaMilkTea();
+		}
+		else if (type.equalsIgnoreCase("Hokkaido Black Milk Tea (Caramel)")) {
+			
+			return new HokkaidoBlackMilkTea();
+		}
+		else if (type.equalsIgnoreCase("Hokkaido Oolong Milk Tea (Toffee Candy)")) {
+			
+			return new HokkaidoOolongMilkTea();
+		}
+		
+		// Fruit Juice part
 		else {
 			
 			return null;
