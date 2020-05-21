@@ -259,6 +259,24 @@ public class DrinkFactory {
 			
 			return new JasmineGreenTeaLatte();
 		}
+		
+		// Coffee part
+		else if (type.equalsIgnoreCase("Hokkaido Coffee")) {
+			
+			return new HokkaidoCoffee();
+		}
+		else if (type.equalsIgnoreCase("Mocha Coffee")) {
+			
+			return new MochaCoffee();
+		}
+		else if (type.equalsIgnoreCase("Hazelnut Coffee")) {
+			
+			return new HazelnutCoffee();
+		}
+		else if (type.equalsIgnoreCase("Vanilla Coffee")) {
+			
+			return new VanillaCoffee();
+		}
 		else {
 			
 			return null;

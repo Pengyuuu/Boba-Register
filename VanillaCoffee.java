@@ -1,11 +1,11 @@
 
-public class JasmineGreenTeaLatte extends Drink{
+public class VanillaCoffee extends Drink{
 	
 	public final boolean COLD = false;
 	
-	public JasmineGreenTeaLatte() {
+	public VanillaCoffee() {
 		
-		description = "Jasmine Green Tea Latte";
+		description = "Vanilla Coffee";
 	}
 	
 	public double cost() {
@@ -17,4 +17,5 @@ public class JasmineGreenTeaLatte extends Drink{
 		
 		return COLD;
 	}
+
 }
