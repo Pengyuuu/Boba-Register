@@ -251,6 +251,14 @@ public class DrinkFactory {
 		}
 		
 		// Latte part
+		else if (type.equalsIgnoreCase("Black Tea Latte")) {
+			
+			return new BlackTeaLatte();
+		}
+		else if (type.equalsIgnoreCase("Jasmine Green Tea Latte")) {
+			
+			return new JasmineGreenTeaLatte();
+		}
 		else {
 			
 			return null;
