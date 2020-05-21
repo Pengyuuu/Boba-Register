@@ -228,7 +228,7 @@ public class DrinkFactory {
 			return new HokkaidoOolongMilkTea();
 		}
 		
-		// Fruit Juice part
+		// Fruit Juice section
 		else if (type.equalsIgnoreCase("Aloe Vera Kiwi Juice")) {
 			
 			return new AloeVeraKiwiJuice();
@@ -250,7 +250,7 @@ public class DrinkFactory {
 			return new PassionFruitJuice();
 		}
 		
-		// Latte part
+		// Latte section
 		else if (type.equalsIgnoreCase("Black Tea Latte")) {
 			
 			return new BlackTeaLatte();
@@ -260,7 +260,7 @@ public class DrinkFactory {
 			return new JasmineGreenTeaLatte();
 		}
 		
-		// Coffee part
+		// Coffee section
 		else if (type.equalsIgnoreCase("Hokkaido Coffee")) {
 			
 			return new HokkaidoCoffee();
@@ -277,6 +277,29 @@ public class DrinkFactory {
 			
 			return new VanillaCoffee();
 		}
+		
+		// Hot drink section
+		else if (type.equalsIgnoreCase("Ginger Tea")) {
+			
+			return new GingerTea();
+		}
+		else if (type.equalsIgnoreCase("Longan Tea")) {
+			
+			return new LonganTea();
+		}
+		else if (type.equalsIgnoreCase("Ginger Longan Tea")) {
+			
+			return new GingerLonganTea();
+		}
+		else if (type.equalsIgnoreCase("Ginger Milk Tea")) {
+			
+			return new GingerMilkTea();
+		}
+		else if (type.equalsIgnoreCase("Longan Milk Tea")) {
+			
+			return new LonganMilkTea();
+		}
+		
 		else {
 			
 			return null;
