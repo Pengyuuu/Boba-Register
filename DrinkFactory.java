@@ -229,6 +229,28 @@ public class DrinkFactory {
 		}
 		
 		// Fruit Juice part
+		else if (type.equalsIgnoreCase("Aloe Vera Kiwi Juice")) {
+			
+			return new AloeVeraKiwiJuice();
+		}
+		else if (type.equalsIgnoreCase("Aloe Vera Honey Juice")) {
+			
+			return new AloeVeraHoneyJuice();
+		}
+		else if (type.equalsIgnoreCase("Plum Lemon Juice")) {
+			
+			return new PlumLemonJuice();
+		}
+		else if (type.equalsIgnoreCase("Honey Lemon Juice")) {
+			
+			return new HoneyLemonJuice();
+		}
+		else if (type.equalsIgnoreCase("Passion Fruit Juice")) {
+			
+			return new PassionFruitJuice();
+		}
+		
+		// Latte part
 		else {
 			
 			return null;
