@@ -17,6 +17,8 @@ public class Main {
 		
 		while (start) {
 			
+			printMenu(menu);
+			
 			start = keepGoing();
 		}
 	}
@@ -53,7 +55,11 @@ public class Main {
 		}
 	}
 	
-	public static ArrayList readMenu() {
+	/**
+	 * Reads in all the drinks from the drinks text file
+	 * @return	an arraylist holding all the drinks available for purchase
+	 */
+	public static ArrayList<MenuItem> readMenu() {
 		
 		// initialize a menu
 		ArrayList<MenuItem> menu = new ArrayList<>();
@@ -68,7 +74,7 @@ public class Main {
 				String line = read.nextLine();
 				
 				String[] tokens = line.split(";");
-				
+								
 				// change the second string in the line to a double
 				double cost = Double.parseDouble(tokens[1]);
 				
@@ -90,6 +96,74 @@ public class Main {
 		}
 		
 		return menu;
+	}
+	
+	/**
+	 * Prints out the menu
+	 * @param menu	arraylist with all the drinks
+	 */
+	public static void printMenu(ArrayList<MenuItem> menu) {
+		
+		// loop through the whole menu arraylist
+		for (int i = 0; i < menu.size(); i++) {
+					
+			// at a certain index, print out the group the drinks belong to
+			if (i == 0) {
+						
+				System.out.println("Fresh tea: ");
+			}
+			else if (i == 3) {
+				
+				System.out.println();
+				
+				System.out.println("Flavored tea: ");
+			}
+			else if (i == 22) {
+				
+				System.out.println();
+				
+				System.out.println("Yakult/Yogurt: ");
+			}
+			else if (i == 32) {
+				
+				System.out.println();
+				
+				System.out.println("Milk tea: ");
+			}
+			else if (i == 51) {
+				
+				System.out.println();
+
+				System.out.println("Fruit juice: ");
+			}
+			else if (i == 56) {
+				
+				System.out.println();
+
+				System.out.println("Latte: ");
+			}
+			else if (i == 58) {
+				
+				System.out.println();
+
+				System.out.println("Coffee: ");
+			}
+			else if (i == 62) {
+				
+				System.out.println();
+
+				System.out.println("Hot drinks: ");
+			}
+			
+			// print out the drink's details
+			System.out.println(menu.get(i));
+		}
+	}
+	public static ArrayList<Drink> orderDrink(ArrayList<MenuItem> menu, ArrayList<Drink> checkOut) {
+		
+		
+		
+		return checkOut;
 	}
 }
 

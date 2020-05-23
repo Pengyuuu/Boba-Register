@@ -1,0 +1,67 @@
+Assam Black Tea;2.65;false
+Jasmine Green Tea;2.65;false
+Oolong Tea;2.65;false
+Peach Green Tea;3.25;true
+Peach Black Tea;3.25;true
+Strawberry Green Tea;3.25;true
+Strawberry Black Tea;3.25;true
+Mango Green Tea;3.25;true
+Mango Black Tea;3.25;true
+Lychee Green Tea;3.25;true
+Lychee Black Tea;3.25;true
+Honey Green Tea;3.25;true
+Honey Black Tea;3.25;true
+Pineapple Green Tea;3.25;true
+Pineapple Black Tea;3.25;true
+Kiwi Green Tea;3.25;true
+Kiwi Black Tea;3.25;true
+Winter Melon Tea;3.25;true
+Winter Melon Green Tea;3.25;true
+Kumquat Tea;3.25;false
+Kumquat Lemon Ice Tea;3.25;true
+Top Fruit Tea;3.25;true
+Green Tea Yakult;3.45;true
+Green Tea Yogurt;3.45;true
+Passion Fruit Yakult;3.45;true
+Passion Fruit Yogurt;3.45;true
+Lychee Yakult;3.45;true
+Lychee Yogurt;3.45;true
+Mango Yakult;3.45;true
+Mango Yogurt;3.45;true
+Strawberry Yakult;3.45;true
+Strawberry Yogurt;3.45;true
+Signature Milk Tea;3.35;false
+Jasmine Green Milk Tea;3.35;false
+Oolong Milk Tea;3.35;false
+Coffee Milk Tea;3.35;false
+Taro Milk Tea;3.35;false
+Matcha Milk Tea;3.35;false
+Chocolate Milk Tea;3.35;false
+Honey Milk Tea;3.35;true
+Strawberry Milk Tea;3.35;true
+Lychee Milk Tea;3.35;true
+Winter Melon Milk Tea;3.35;true
+Peach Milk Tea;3.35;true
+Mango Milk Tea;3.35;true
+Passion Fruit Milk Tea;3.35;true
+Brown Sugar Milk Tea;3.35;false
+Hazelnut Milk Tea;3.35;false
+Vanilla Milk Tea;3.35;false
+Hokkaido Black Milk Tea (Caramel);3.25;false
+Hokkaido Oolong Milk tea (Toffee Candy);3.25;false
+Aloe Vera Kiwi Juice;3.15;true
+Aloe Vera Honey Juice;3.15;true
+Plum Lemon Juice;3.15;true
+Honey Lemon Juice;3.15;true
+Passion Fruit Juice;3.15;true
+Black Tea Latte;3.45;false
+Jasmine Green Tea Latte;3.45;false
+Hokkaido Coffee;3.45;false
+Mocha Coffee;3.45;false
+Hazelnut Coffee;3.45;false
+Vanilla Coffee;3.45;false
+Ginger Tea;3.05;false
+Longan Tea;3.05;false
+Ginger Longan Tea;3.05;false
+Ginger Milk Tea;3.05;false
+Longan Milk Tea;3.05;false
