@@ -156,7 +156,7 @@ public class Main {
 			}
 			
 			// print out the drink's details
-			System.out.println(menu.get(i));
+			System.out.println(i + 1 + ". " + menu.get(i));
 		}
 	}
 	public static ArrayList<Drink> orderDrink(ArrayList<MenuItem> menu, ArrayList<Drink> checkOut) {
