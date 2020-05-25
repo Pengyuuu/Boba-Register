@@ -35,6 +35,11 @@ public class MenuItem {
 		this.COLD = COLD;
 	}
 	
+	public String getName() {
+		
+		return name;
+	}
+	
 	/**
 	 * Returns if the drink can't be served hot
 	 * @return	whether or not the drink can only be served cold
