@@ -161,6 +161,18 @@ public class Main {
 	}
 	public static ArrayList<Drink> orderDrink(ArrayList<MenuItem> menu, ArrayList<Drink> checkOut) {
 		
+		Scanner scan = new Scanner(System.in);
+		
+		DrinkFactory kitchen = new DrinkFactory();
+		
+		printMenu(menu);
+		
+		System.out.print("What drink would you like to order?: ");
+		
+		int choice = scan.nextInt();
+		
+		Drink order = kitchen.getDrink(menu.get(choice).getName());
+		
 		
 		
 		return checkOut;
