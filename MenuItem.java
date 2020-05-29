@@ -35,6 +35,10 @@ public class MenuItem {
 		this.COLD = COLD;
 	}
 	
+	/**
+	 * Gets the name of the drink
+	 * @return	name of the drink
+	 */
 	public String getName() {
 		
 		return name;

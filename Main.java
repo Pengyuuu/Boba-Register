@@ -19,6 +19,8 @@ public class Main {
 			
 			printMenu(menu);
 			
+			orderDrink(menu, checkOut);
+			
 			start = keepGoing();
 		}
 	}
@@ -159,21 +161,90 @@ public class Main {
 			System.out.println(i + 1 + ". " + menu.get(i));
 		}
 	}
+	
+	/**
+	 * Prints out the available addons and their prices
+	 */
+	public static void printAddonMenu() {
+		
+		// define the addons and their prices
+		String[] addons = {"Golden Boba", "Coconut Jelly", "Grass Jelly", "Coffee Jelly", "Rainbow Jelly", "Egg Pudding", "Aloe Vera", "Star Fruit Jelly", "Sea Cream", "Crystal Boba"};
+		
+		double[] addonPrice = {0.55, 0.55, 0.55, 0.55, 0.55, 0.55, 0.55, 0.55, 0.55, 0.75};
+		
+		// print loop to print out the addons and their prices
+		for (int i = 0; i < addons.length + 1; i++) {
+			
+			if (i == 10) {
+				
+				System.out.println(i + 1 + ". Quit");
+			}
+			else {
+				
+				System.out.println(i + 1 + ". " + addons[i] + " " + addonPrice[i]);
+			}
+		}
+	}
+	
+	public static Drink decorateDrink(int choice, Drink order) {
+		
+		return order;
+	}
 	public static ArrayList<Drink> orderDrink(ArrayList<MenuItem> menu, ArrayList<Drink> checkOut) {
 		
+		// creates scanner and drink factory
 		Scanner scan = new Scanner(System.in);
 		
 		DrinkFactory kitchen = new DrinkFactory();
 		
+		// prints the menu
 		printMenu(menu);
 		
-		System.out.print("What drink would you like to order?: ");
+		// user orders the drink
+		System.out.print("\n" + "What drink would you like to order?: ");
 		
 		int choice = scan.nextInt();
 		
 		Drink order = kitchen.getDrink(menu.get(choice).getName());
 		
+		// user decorates the drink with addons
+		System.out.print("\n" + "Do you want addons? Y/N: ");
 		
+		String addonChoice = scan.next();
+		
+		// validate it
+		while (!(addonChoice.equalsIgnoreCase("y") || addonChoice.equalsIgnoreCase("n"))) {
+			
+			System.out.print("Invalid input. Do you want addons? Y/N: ");
+			
+			addonChoice = scan.next();
+		}
+		
+		if (addonChoice.equalsIgnoreCase("Y")) {
+			
+			// print out addons menu
+			while (choice != 11) {
+				
+				printAddonMenu();
+				
+				// get user's choice
+				System.out.print("\n" + "Select an addon: ");
+				
+				choice = scan.nextInt();
+				
+				// validate user's choice
+				while (choice < 1 || choice > 11) {
+					
+					System.out.print("\n" + "Invalid input. Select an addon: ");
+					
+					choice = scan.nextInt();
+				}
+				
+			}
+			
+		}
+		// adds the drink to their cart
+		checkOut.add(order);
 		
 		return checkOut;
 	}
